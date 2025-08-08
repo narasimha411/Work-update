@@ -1,0 +1,646 @@
+Authenticating with public key "Imported-Openssh-Key"
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v25.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ec2-user@65.1.95.1                                  │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✗  (disabled or not supported by server)      │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.8.20250804:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Aug  8 06:24:42 2025 from 115.98.184.125
+[ec2-user@ip-172-31-1-202 ~]$ sudo su
+[root@ip-172-31-1-202 ec2-user]# whoami
+root
+[root@ip-172-31-1-202 ec2-user]# exit
+exit
+[ec2-user@ip-172-31-1-202 ~]$ exit
+logout
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Session stopped
+    - Press <Return> to exit tab
+    - Press R to restart session
+    - Press S to save terminal output to file
+Authenticating with public key "Imported-Openssh-Key"
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v25.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ec2-user@65.1.95.1                                  │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✗  (disabled or not supported by server)      │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.8.20250804:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Aug  8 06:26:40 2025 from 115.98.184.125
+[ec2-user@ip-172-31-1-202 ~]$ sudo su
+[root@ip-172-31-1-202 ec2-user]# sudo -i
+[root@ip-172-31-1-202 ~]# mkdir dev
+[root@ip-172-31-1-202 ~]# mkdir ops backupdir
+[root@ip-172-31-1-202 ~]# ls
+backupdir  dev  ops
+[root@ip-172-31-1-202 ~]# pwd
+/root
+[root@ip-172-31-1-202 ~]# touch testfile.txt
+[root@ip-172-31-1-202 ~]# touch devopsfile{1..10}.txt
+[root@ip-172-31-1-202 ~]# ls
+backupdir  devopsfile1.txt   devopsfile2.txt  devopsfile4.txt  devopsfile6.txt  devopsfile8.txt  ops
+dev        devopsfile10.txt  devopsfile3.txt  devopsfile5.txt  devopsfile7.txt  devopsfile9.txt  testfile.txt
+[root@ip-172-31-1-202 ~]# cp devopsfile1.txt dev/
+[root@ip-172-31-1-202 ~]# ls dev/
+devopsfile1.txt
+[root@ip-172-31-1-202 ~]# ls
+backupdir  devopsfile1.txt   devopsfile2.txt  devopsfile4.txt  devopsfile6.txt  devopsfile8.txt  ops
+dev        devopsfile10.txt  devopsfile3.txt  devopsfile5.txt  devopsfile7.txt  devopsfile9.txt  testfile.txt
+[root@ip-172-31-1-202 ~]# cd/tmp/
+-bash: cd/tmp/: No such file or directory
+[root@ip-172-31-1-202 ~]# pwd
+/root
+[root@ip-172-31-1-202 ~]# cd /tmp/
+[root@ip-172-31-1-202 tmp]# cp dev backupdir/
+cp: cannot stat 'dev': No such file or directory
+[root@ip-172-31-1-202 tmp]# cp -r dev backupdir/
+cp: cannot stat 'dev': No such file or directory
+[root@ip-172-31-1-202 tmp]# ls backupdir/
+ls: cannot access 'backupdir/': No such file or directory
+[root@ip-172-31-1-202 tmp]# cp /home/devopsfile2.txt /home/dev/
+cp: cannot stat '/home/devopsfile2.txt': No such file or directory
+[root@ip-172-31-1-202 tmp]# cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don't copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+  -c                           deprecated, same as --preserve=context
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+Use --reflink=never to ensure a standard copy is performed.
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/cp>
+or available locally via: info '(coreutils) cp invocation'
+Last login: Fri Aug  8 06:27:48 2025 from 115.98.184.125
+[ec2-user@ip-172-31-1-202 ~]$ mv testfile1.txt testfile22.txt
+mv: cannot stat 'testfile1.txt': No such file or directory
+[ec2-user@ip-172-31-1-202 ~]$ mkdir txtdir
+[ec2-user@ip-172-31-1-202 ~]$ mv *.txt txtdir/
+mv: cannot stat '*.txt': No such file or directory
+[ec2-user@ip-172-31-1-202 ~]$ cd txtdir/
+[ec2-user@ip-172-31-1-202 txtdir]$ mkdir testdir{1..5}
+[ec2-user@ip-172-31-1-202 txtdir]$ ls
+testdir1  testdir2  testdir3  testdir4  testdir5
+[ec2-user@ip-172-31-1-202 txtdir]$ sudo su
+[root@ip-172-31-1-202 txtdir]# ls
+testdir1  testdir2  testdir3  testdir4  testdir5
+[root@ip-172-31-1-202 txtdir]# cd
+[root@ip-172-31-1-202 ~]# ls
+backupdir  devopsfile1.txt   devopsfile2.txt  devopsfile4.txt  devopsfile6.txt  devopsfile8.txt  ops
+dev        devopsfile10.txt  devopsfile3.txt  devopsfile5.txt  devopsfile7.txt  devopsfile9.txt  testfile.txt
+[root@ip-172-31-1-202 ~]# cd txtdir
+bash: cd: txtdir: No such file or directory
+[root@ip-172-31-1-202 ~]# cd testdir1
+bash: cd: testdir1: No such file or directory
+[root@ip-172-31-1-202 ~]# cd dev
+[root@ip-172-31-1-202 dev]# cd
+[root@ip-172-31-1-202 ~]# cd backupdir
+[root@ip-172-31-1-202 backupdir]# cd
+[root@ip-172-31-1-202 ~]# cd devopsfile1.txt
+bash: cd: devopsfile1.txt: Not a directory
+[root@ip-172-31-1-202 ~]# cat >>devopsfile.txt
+kkdkndkkscbkciknbikckmnii nknfinkjnknfiqendkji[root@ip-172-31-1-202 ~]#
+exit
+[ec2-user@ip-172-31-1-202 txtdir]$ cat devopsfile.txt
+cat: devopsfile.txt: No such file or directory
+[ec2-user@ip-172-31-1-202 txtdir]$ cat >devopsfile1.txt
+kdbjlczc ;lc ; kncnlnk;n
+bcknbc;a;bc
+kc;bcbk;bc
+kcbak;bc;
+^Z
+[1]+  Stopped                 cat > devopsfile1.txt
+[ec2-user@ip-172-31-1-202 txtdir]$ cat devopsfile1.txt
+kdbjlczc ;lc ; kncnlnk;n
+bcknbc;a;bc
+kc;bcbk;bc
+kcbak;bc;
+[ec2-user@ip-172-31-1-202 txtdir]$ cd
+[ec2-user@ip-172-31-1-202 ~]$ cd
+[ec2-user@ip-172-31-1-202 ~]$ history
+    1  sudo su
+    2  ls -l
+    3  sudo -i
+    4  sudo -i
+    5  sudo su
+    6  ls
+    7  cat /etc/passwd
+    8  clear
+    9  ls -l
+   10  sudo su
+   11  sudo -i
+   12  'visudo'
+   13  sudo visudo
+   14  sudo -i
+   15  sudo visudo
+   16  /etc/sudoers/
+   17  /etc/sudoers.d/
+   18  /etc/sudoers.d/jenkin
+   19  sudoers
+   20  sudo -i
+   21  vi/etc/sudoers
+   22  sudo su
+   23  sudo apt update
+   24  apt update
+   25  sudo -i
+   26  sudo su
+   27  exit
+   28  sudo su
+   29  mv testfile1.txt testfile22.txt
+   30  mkdir txtdir
+   31  mv *.txt txtdir/
+   32  cd txtdir/
+   33  mkdir testdir{1..5}
+   34  ls
+   35  sudo su
+   36  cat devopsfile.txt
+   37  cat >devopsfile1.txt
+   38  cat devopsfile1.txt
+   39  cd
+   40  history
+[ec2-user@ip-172-31-1-202 ~]$
+[ec2-user@ip-172-31-1-202 ~]$ ^C
+[ec2-user@ip-172-31-1-202 ~]$ sudo apt -get install vim
+sudo: apt: command not found
+[ec2-user@ip-172-31-1-202 ~]$ cat /etc/os-release
+NAME="Amazon Linux"
+VERSION="2023"
+ID="amzn"
+ID_LIKE="fedora"
+VERSION_ID="2023"
+PLATFORM_ID="platform:al2023"
+PRETTY_NAME="Amazon Linux 2023.8.20250721"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2023"
+HOME_URL="https://aws.amazon.com/linux/amazon-linux-2023/"
+DOCUMENTATION_URL="https://docs.aws.amazon.com/linux/"
+SUPPORT_URL="https://aws.amazon.com/premiumsupport/"
+BUG_REPORT_URL="https://github.com/amazonlinux/amazon-linux-2023"
+VENDOR_NAME="AWS"
+VENDOR_URL="https://aws.amazon.com/"
+SUPPORT_END="2029-06-30"
+[ec2-user@ip-172-31-1-202 ~]$ sudo yum install vim -y
+Last metadata expiration check: 0:52:44 ago on Fri Aug  8 06:22:40 2025.
+Package vim-enhanced-2:9.1.1484-1.amzn2023.0.1.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-1-202 ~]$ vim firstfile.txt
+[ec2-user@ip-172-31-1-202 ~]$ cat firstfile.txt
+kcbkmzcbkz xnasnkasxdnnsaknanskasdkcbkznscas
+sbcmssbxc skmnxljascxbsckasbxc;asckacn
+znczczncznczxncckzncxkscssckssckjczkckccikacjckask
+bckzcbkcnkcnbkzckzcnikcnckjncackjnaskdk
+kjnckznckzcknkcnkzjcnkznckzncnzckjc,jczckjasaikcn,znc
+kscoas,mzncjaiciooiekjadakdckdhdadladhnihdjcjajd
+dhiadkandkjadkajdkjasdjasddadbabdadladbadadkkkzc
+cmcz xckznxcxkznckznckzncznckjdlajdjn
+nckjznckjzcjnlkzmcjmzckzmnc,mzcjnncsljadnzlcmzcz,ccmhzc;zs
+k;jzsxkjnzsscxkzjskjzckjaczkjczcjzskjcjkjzsxcnkjzshcoiuadkjaancac
+[lzkxcjnknzsscjnasdkjzcnikzzhd coizscjszkldcjashjfoid
+[ikzckznsckzsscxakdkjns;lkjscjoik.zscjo;jzsck;kjjilkzsczoczso;oklzscxnjkzxco
+[
+[ec2-user@ip-172-31-1-202 ~]$ sudo -i
+[root@ip-172-31-1-202 ~]# pwd
+/root
+[root@ip-172-31-1-202 ~]# ls
+backupdir  devopsfile.txt   devopsfile10.txt  devopsfile3.txt  devopsfile5.txt  devopsfile7.txt  devopsfile9.txt  testfile.txt
+dev        devopsfile1.txt  devopsfile2.txt   devopsfile4.txt  devopsfile6.txt  devopsfile8.txt  ops
+[root@ip-172-31-1-202 ~]# ls -l
+total 4
+drwxr-xr-x. 2 root root  6 Aug  8 06:29 backupdir
+drwxr-xr-x. 2 root root 29 Aug  8 06:32 dev
+-rw-r--r--. 1 root root 46 Aug  8 07:07 devopsfile.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile1.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile10.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile2.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile3.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile4.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile5.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile6.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile7.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile8.txt
+-rw-r--r--. 1 root root  0 Aug  8 06:31 devopsfile9.txt
+drwxr-xr-x. 2 root root  6 Aug  8 06:29 ops
+-rw-r--r--. 1 root root  0 Aug  8 06:30 testfile.txt
+[root@ip-172-31-1-202 ~]#
+[root@ip-172-31-1-202 ~]# ^C
+[root@ip-172-31-1-202 ~]# grep firewall devopsfile.txt
+[root@ip-172-31-1-202 ~]# grep Firewall devopsfile.txt
+[root@ip-172-31-1-202 ~]# grep -i Firewall devopsfile.txt
+[root@ip-172-31-1-202 ~]# cd /var/log/
+[root@ip-172-31-1-202 log]# ls
+README  audit  btmp-20250801  cloud-init-output.log  dnf.librepo.log  dnf.rpm.log  hawkey.log-20250808  lastlog  sa    tallylog
+amazon  btmp   chrony         cloud-init.log         dnf.log          hawkey.log   journal              private  sssd  wtmp
+[root@ip-172-31-1-202 log]# tail -f dnf.log
+2025-08-08T07:15:24+0000 INFO Last metadata expiration check: 0:52:44 ago on Fri Aug  8 06:22:40 2025.
+2025-08-08T07:15:24+0000 DDEBUG timer: sack setup: 216 ms
+2025-08-08T07:15:24+0000 INFO Package vim-enhanced-2:9.1.1484-1.amzn2023.0.1.x86_64 is already installed.
+2025-08-08T07:15:24+0000 DEBUG --> Starting dependency resolution
+2025-08-08T07:15:24+0000 DEBUG --> Finished dependency resolution
+2025-08-08T07:15:24+0000 DDEBUG timer: depsolve: 70 ms
+2025-08-08T07:15:24+0000 INFO Dependencies resolved.
+2025-08-08T07:15:24+0000 INFO Nothing to do.
+2025-08-08T07:15:24+0000 INFO Complete!
+2025-08-08T07:15:24+0000 DDEBUG Cleaning up.
+^C
+[root@ip-172-31-1-202 log]# cat message
+cat: message: No such file or directory
+[root@ip-172-31-1-202 log]# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:999:999:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:997:997:daemon account for libstoragemgmt:/:/usr/sbin/nologin
+systemd-coredump:x:996:996:systemd Core Dumper:/:/usr/sbin/nologin
+systemd-timesync:x:995:995:systemd Time Synchronization:/:/usr/sbin/nologin
+chrony:x:994:994:chrony system user:/var/lib/chrony:/sbin/nologin
+ec2-instance-connect:x:993:993::/home/ec2-instance-connect:/sbin/nologin
+stapunpriv:x:159:159:systemtap unprivileged user:/var/lib/stapunpriv:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+jenkinsworker:x:1001:1001::/home/jenkinsworker:/bin/bash
+jenkin:x:1002:1002::/home/jenkin:/bin/bash
+sabik:x:1003:1003::/home/sabik:/bin/bash
+[root@ip-172-31-1-202 log]# ^C
+Last login: Fri Aug  8 06:54:34 2025 from 115.98.184.125
+[ec2-user@ip-172-31-1-202 ~]$ cat firtfile.txt
+cat: firtfile.txt: No such file or directory
+[ec2-user@ip-172-31-1-202 ~]$ cat firstfile.txt
+kcbkmzcbkz xnasnkasxdnnsaknanskasdkcbkznscas
+sbcmssbxc skmnxljascxbsckasbxc;asckacn
+znczczncznczxncckzncxkscssckssckjczkckccikacjckask
+bckzcbkcnkcnbkzckzcnikcnckjncackjnaskdk
+kjnckznckzcknkcnkzjcnkznckzncnzckjc,jczckjasaikcn,znc
+kscoas,mzncjaiciooiekjadakdckdhdadladhnihdjcjajd
+dhiadkandkjadkajdkjasdjasddadbabdadladbadadkkkzc
+cmcz xckznxcxkznckznckzncznckjdlajdjn
+nckjznckjzcjnlkzmcjmzckzmnc,mzcjnncsljadnzlcmzcz,ccmhzc;zs
+k;jzsxkjnzsscxkzjskjzckjaczkjczcjzskjcjkjzsxcnkjzshcoiuadkjaancac
+[lzkxcjnknzsscjnasdkjzcnikzzhd coizscjszkldcjashjfoid
+[ikzckznsckzsscxakdkjns;lkjscjoik.zscjo;jzsck;kjjilkzsczoczso;oklzscxnjkzxco
+[
+[ec2-user@ip-172-31-1-202 ~]$ uptime
+ 09:10:09 up  2:47,  1 user,  load average: 0.00, 0.00, 0.00
+[ec2-user@ip-172-31-1-202 ~]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:999:999:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:997:997:daemon account for libstoragemgmt:/:/usr/sbin/nologin
+systemd-coredump:x:996:996:systemd Core Dumper:/:/usr/sbin/nologin
+systemd-timesync:x:995:995:systemd Time Synchronization:/:/usr/sbin/nologin
+chrony:x:994:994:chrony system user:/var/lib/chrony:/sbin/nologin
+ec2-instance-connect:x:993:993::/home/ec2-instance-connect:/sbin/nologin
+stapunpriv:x:159:159:systemtap unprivileged user:/var/lib/stapunpriv:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+jenkinsworker:x:1001:1001::/home/jenkinsworker:/bin/bash
+jenkin:x:1002:1002::/home/jenkin:/bin/bash
+sabik:x:1003:1003::/home/sabik:/bin/bash
+[ec2-user@ip-172-31-1-202 ~]$ free -m
+               total        used        free      shared  buff/cache   available
+Mem:             949         117         597           0         233         693
+Swap:              0           0           0
+[ec2-user@ip-172-31-1-202 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           475M     0  475M   0% /dev/shm
+tmpfs           190M  432K  190M   1% /run
+/dev/xvda1      8.0G  1.7G  6.4G  21% /
+tmpfs           475M     0  475M   0% /tmp
+/dev/xvda128     10M  1.3M  8.7M  13% /boot/efi
+tmpfs            95M     0   95M   0% /run/user/1000
+[ec2-user@ip-172-31-1-202 ~]$ cd /var/log/
+[ec2-user@ip-172-31-1-202 log]$ ls
+README  audit  btmp-20250801  cloud-init-output.log  dnf.librepo.log  dnf.rpm.log  hawkey.log-20250808  lastlog  sa    tallylog
+amazon  btmp   chrony         cloud-init.log         dnf.log          hawkey.log   journal              private  sssd  wtmp
+[ec2-user@ip-172-31-1-202 log]$ cd /etc/
+[ec2-user@ip-172-31-1-202 etc]$ cd
+[ec2-user@ip-172-31-1-202 ~]$ cd /etc/
+[ec2-user@ip-172-31-1-202 etc]$ ls
+DIR_COLORS                cron.hourly      grub.d              libaudit.conf   nsswitch.conf     request-key.d  sudo.conf
+DIR_COLORS.lightbgcolor   cron.monthly     grub2-efi.cfg       libibverbs.d    openldap          resolv.conf    sudoers
+GREP_COLORS               cron.weekly      grub2.cfg           libnl           opt               rpc            sudoers.d
+NetworkManager            crontab          gshadow             libreport       os-release        rpm            sudoers.tmp.save
+X11                       crypto-policies  gshadow-            libuser.conf    pam.d             rsyncd.conf    sudoers.tmp.save.1
+acpi                      csh.cshrc        gss                 locale.conf     passwd            rsyslog.d      sudoers.tmp.save.2
+adjtime                   csh.login        gssproxy            localtime       passwd-           rwtab.d        sudoers.tmp.save.3
+aliases                   dbus-1           hibinit-config.cfg  login.defs      pkcs11            sasl2          sysconfig
+alternatives              default          host.conf           logrotate.conf  pkgconfig         screenrc       sysctl.conf
+amazon                    depmod.d         hostname            logrotate.d     pki               security       sysctl.d
+amazon-linux-release      dhcp             hosts               lsm             pm                selinux        system-release
+amazon-linux-release-cpe  dnf              idmapd.conf         machine-id      popt.d            services       system-release-cpe
+at.deny                   dracut.conf      image-id            magic           printcap          sestatus.conf  systemd
+audit                     dracut.conf.d    init.d              man_db.conf     profile           shadow         terminfo
+bash_completion.d         environment      inittab             mke2fs.conf     profile.d         shadow-        tmpfiles.d
+bashrc                    ethertypes       inputrc             modprobe.d      protocols         shells         trusted-key.key
+bindresvport.blacklist    exports          issue               modules-load.d  rc.d              skel           udev
+binfmt.d                  exports.d        issue.net           motd            rc0.d             ssh            update-motd.d
+chkconfig.d               filesystems      kernel              motd.d          rc1.d             ssl            vimrc
+chrony.conf               fstab            keyutils            mtab            rc2.d             sssd           virc
+chrony.d                  gcrypt           krb5.conf           nanorc          rc3.d             statetab.d     wgetrc
+chrony.keys               gnupg            krb5.conf.d         netconfig       rc4.d             subgid         xattr.conf
+cifs-utils                groff            ld.so.cache         networks        rc5.d             subgid-        xdg
+cloud                     group            ld.so.conf          nfs.conf        rc6.d             subuid         yum.repos.d
+cron.daily                group-           ld.so.conf.d        nfsmount.conf   request-key.conf  subuid-
+[ec2-user@ip-172-31-1-202 etc]$ ls | wc -1
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+[ec2-user@ip-172-31-1-202 etc]$ ls | grep host
+host.conf
+hostname
+hosts
+[ec2-user@ip-172-31-1-202 etc]$ tail /var/log/message | grep -i
+Usage: grep [OPTION]... PATTERNS [FILE]...
+tail: Try 'grep --help' for more information.
+cannot open '/var/log/message' for reading: No such file or directory
+[ec2-user@ip-172-31-1-202 etc]$ tail /var/log/message | grep -i root
+tail: cannot open '/var/log/message' for reading: No such file or directory
+[ec2-user@ip-172-31-1-202 etc]$ tail /var/log/message | grep -i ec2-user
+tail: cannot open '/var/log/message' for reading: No such file or directory
+[ec2-user@ip-172-31-1-202 etc]$
+[ec2-user@ip-172-31-1-202 etc]$ free -m | grep Mem
+Mem:             949         117         597           0         234         694
+[ec2-user@ip-172-31-1-202 etc]$ ls -l | tail
+drwxr-xr-x.  2 root root        6 Jun 12 22:51 tmpfiles.d
+-rw-r--r--.  1 root root      375 Jul 14 17:31 trusted-key.key
+drwxr-xr-x.  4 root root       68 Jul 19 21:23 udev
+drwxr-xr-x.  2 root root       34 Nov 22  2024 update-motd.d
+-rw-r--r--.  1 root root     4017 Jun 30 17:37 vimrc
+-rw-r--r--.  1 root root     1183 Jun 30 17:37 virc
+-rw-r--r--.  1 root root     4925 Jul  8  2024 wgetrc
+-rw-r--r--.  1 root root      817 Jan 29  2023 xattr.conf
+drwxr-xr-x.  4 root root       38 Jul 19 21:22 xdg
+drwxr-xr-x.  2 root root       59 Jul 15 18:25 yum.repos.d
+[ec2-user@ip-172-31-1-202 etc]$ ls -l | head
+total 1164
+-rw-r--r--.  1 root root     4673 Feb 17  2023 DIR_COLORS
+-rw-r--r--.  1 root root     4755 Feb 17  2023 DIR_COLORS.lightbgcolor
+-rw-r--r--.  1 root root       94 Jan 30  2023 GREP_COLORS
+drwxr-xr-x.  3 root root       26 Jul 19 21:22 NetworkManager
+drwxr-xr-x.  6 root root       70 Jul 19 21:22 X11
+drwxr-xr-x.  4 root root       35 Jul 19 21:22 acpi
+-rw-r--r--.  1 root root       16 Jul 19 21:23 adjtime
+-rw-r--r--.  1 root root     1529 Jun 23  2020 aliases
+drwxr-xr-x.  2 root root      213 Jul 19 21:22 alternatives
+[ec2-user@ip-172-31-1-202 etc]$ locate hoste
+-bash: locate: command not found
+[ec2-user@ip-172-31-1-202 etc]$ locate host
+-bash: locate: command not found
+[ec2-user@ip-172-31-1-202 etc]$ updatedb
+-bash: updatedb: command not found
+[ec2-user@ip-172-31-1-202 etc]$ yum install mlocate -y
+Error: This command has to be run with superuser privileges (under the root user on most systems).
+[ec2-user@ip-172-31-1-202 etc]$ cd
+[ec2-user@ip-172-31-1-202 ~]$ yum install mlocate -y
+Error: This command has to be run with superuser privileges (under the root user on most systems).
+[ec2-user@ip-172-31-1-202 ~]$ cat etc/passwd/
+cat: etc/passwd/: No such file or directory
+[ec2-user@ip-172-31-1-202 ~]$ cat /etc/passwd/
+cat: /etc/passwd/: Not a directory
+[ec2-user@ip-172-31-1-202 ~]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:999:999:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:997:997:daemon account for libstoragemgmt:/:/usr/sbin/nologin
+systemd-coredump:x:996:996:systemd Core Dumper:/:/usr/sbin/nologin
+systemd-timesync:x:995:995:systemd Time Synchronization:/:/usr/sbin/nologin
+chrony:x:994:994:chrony system user:/var/lib/chrony:/sbin/nologin
+ec2-instance-connect:x:993:993::/home/ec2-instance-connect:/sbin/nologin
+stapunpriv:x:159:159:systemtap unprivileged user:/var/lib/stapunpriv:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+jenkinsworker:x:1001:1001::/home/jenkinsworker:/bin/bash
+jenkin:x:1002:1002::/home/jenkin:/bin/bash
+sabik:x:1003:1003::/home/sabik:/bin/bash
+[ec2-user@ip-172-31-1-202 ~]$ head -1 /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+[ec2-user@ip-172-31-1-202 ~]$ cat /etc/group
+root:x:0:
+bin:x:1:
+daemon:x:2:
+sys:x:3:
+adm:x:4:ec2-user
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:ec2-user
+cdrom:x:11:
+mail:x:12:
+man:x:15:
+dialout:x:18:
+floppy:x:19:
+games:x:20:
+tape:x:33:
+video:x:39:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+users:x:100:
+nobody:x:65534:
+utmp:x:22:
+utempter:x:35:
+dbus:x:81:
+input:x:104:
+kvm:x:36:
+render:x:105:
+sgx:x:106:
+systemd-journal:x:190:ec2-user
+systemd-network:x:192:
+systemd-oom:x:999:
+systemd-resolve:x:193:
+ssh_keys:x:998:
+sshd:x:74:
+rpc:x:32:
+libstoragemgmt:x:997:
+systemd-coredump:x:996:
+systemd-timesync:x:995:
+chrony:x:994:
+ec2-instance-connect:x:993:
+stapusr:x:156:
+stapsys:x:157:
+stapdev:x:158:
+stapunpriv:x:159:stapunpriv
+rpcuser:x:29:
+tcpdump:x:72:
+screen:x:84:
+ec2-user:x:1000:
+jenkinsworker:x:1001:
+jenkin:x:1002:
+sabik:x:1003:
+[ec2-user@ip-172-31-1-202 ~]$ grep /etc/group
+
+^C
+[ec2-user@ip-172-31-1-202 ~]$ id jenkin
+uid=1002(jenkin) gid=1002(jenkin) groups=1002(jenkin)
+[ec2-user@ip-172-31-1-202 ~]$ tail -4 /etc/passwd
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+jenkinsworker:x:1001:1001::/home/jenkinsworker:/bin/bash
+jenkin:x:1002:1002::/home/jenkin:/bin/bash
+sabik:x:1003:1003::/home/sabik:/bin/bash
