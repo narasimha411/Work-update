@@ -1,0 +1,719 @@
+ ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v25.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ubuntu@65.0.169.132                                 │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✓  (remote display is forwarded through SSH)  │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Aug 21 05:02:10 UTC 2025
+
+  System load:  0.52              Processes:             111
+  Usage of /:   37.1% of 6.71GB   Users logged in:       0
+  Memory usage: 23%               IPv4 address for enX0: 172.31.32.116
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+115 updates can be applied immediately.
+67 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Wed Aug 20 11:38:07 2025 from 103.211.38.214
+ubuntu@ip-172-31-32-116:~$ sudo su
+root@ip-172-31-32-116:/home/ubuntu# cd
+root@ip-172-31-32-116:~# sudo apt update
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1350 kB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [268 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1123 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [376 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1728 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [382 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7072 B]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [19.2 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1083 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [187 kB]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:21 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [881 kB]
+Get:22 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [195 kB]
+Get:23 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.3 kB]
+Get:24 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1631 kB]
+Get:25 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [361 kB]
+Get:26 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:27 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Fetched 10.2 MB in 33s (308 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+110 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@ip-172-31-32-116:~# sudo apt install apt-transport-https ca-certificates curl software-properties-common
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+ca-certificates is already the newest version (20240203).
+ca-certificates set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.6).
+curl set to manually installed.
+The following additional packages will be installed:
+  python3-software-properties
+The following NEW packages will be installed:
+  apt-transport-https
+The following packages will be upgraded:
+  python3-software-properties software-properties-common
+2 upgraded, 1 newly installed, 0 to remove and 108 not upgraded.
+Need to get 48.3 kB of archives.
+After this operation, 36.9 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 apt-transport-https all 2.8.3 [3970 B]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 software-properties-common all 0.99.49.3 [14.4 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-software-properties all 0.99.49.3 [29.9 kB]
+Fetched 48.3 kB in 0s (2359 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 87692 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_2.8.3_all.deb ...
+Unpacking apt-transport-https (2.8.3) ...
+Preparing to unpack .../software-properties-common_0.99.49.3_all.deb ...
+Unpacking software-properties-common (0.99.49.3) over (0.99.49.2) ...
+Preparing to unpack .../python3-software-properties_0.99.49.3_all.deb ...
+Unpacking python3-software-properties (0.99.49.3) over (0.99.49.2) ...
+Setting up apt-transport-https (2.8.3) ...
+Setting up python3-software-properties (0.99.49.3) ...
+Setting up software-properties-common (0.99.49.3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for dbus (1.14.10-4ubuntu4.1) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-32-116:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+root@ip-172-31-32-116:~# sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+Repository: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable'
+Description:
+Archive for codename: focal components: stable
+More info: https://download.docker.com/linux/ubuntu
+Adding repository.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Adding deb entry to /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-noble.list
+Adding disabled deb-src entry to /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-noble.list
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:4 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Get:6 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [59.9 kB]
+Fetched 118 kB in 1s (128 kB/s)
+Reading package lists... Done
+W: https://download.docker.com/linux/ubuntu/dists/focal/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+root@ip-172-31-32-116:~# apt-cache policy docker-ce
+docker-ce:
+  Installed: (none)
+  Candidate: 5:28.1.1-1~ubuntu.20.04~focal
+  Version table:
+     5:28.1.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:28.1.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:28.0.4-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:28.0.3-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:28.0.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:28.0.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:28.0.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.5.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.5.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.4.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.4.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.3.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.3.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.2.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.2.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.1.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.1.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.1.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.0.3-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.0.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:27.0.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.1.4-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.1.3-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.1.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.1.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.1.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.0.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.0.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:26.0.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:25.0.5-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:25.0.4-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:25.0.3-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:25.0.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:25.0.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:25.0.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.9-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.8-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.7-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.6-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.5-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.4-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.3-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:24.0.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.6-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.5-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.4-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.3-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.2-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.1-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:23.0.0-1~ubuntu.20.04~focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.24~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.23~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.22~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.21~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.20~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.19~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.18~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.17~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.16~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.15~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.14~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.13~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.12~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.11~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.10~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.9~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.8~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.7~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.6~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.5~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.4~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.3~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.2~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.1~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.0~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.15~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.14~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.13~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.12~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.11~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.10~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.9~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+root@ip-172-31-32-116:~# sudo apt install docker-ce
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce-cli docker-ce-rootless-extras docker-compose-plugin libltdl7 libslirp0 pigz slirp4netns
+Suggested packages:
+  cgroupfs-mount | cgroup-lite
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin libltdl7 libslirp0 pigz
+  slirp4netns
+0 upgraded, 10 newly installed, 0 to remove and 108 not upgraded.
+Need to get 120 MB of archives.
+After this operation, 440 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libltdl7 amd64 2.4.7-7build1 [40.3 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libslirp0 amd64 4.7.0-1ubuntu3 [63.8 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 slirp4netns amd64 1.2.1-1build2 [34.9 kB]
+Get:5 https://download.docker.com/linux/ubuntu focal/stable amd64 containerd.io amd64 1.7.27-1 [30.5 MB]
+Get:6 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-buildx-plugin amd64 0.23.0-1~ubuntu.20.04~focal [34.6 MB]
+Get:7 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-cli amd64 5:28.1.1-1~ubuntu.20.04~focal [15.8 MB]
+Get:8 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce amd64 5:28.1.1-1~ubuntu.20.04~focal [19.2 MB]
+Get:9 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-rootless-extras amd64 5:28.1.1-1~ubuntu.20.04~focal [6097 kB]
+Get:10 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-compose-plugin amd64 2.35.1-1~ubuntu.20.04~focal [13.8 MB]
+Fetched 120 MB in 3s (40.5 MB/s)
+Selecting previously unselected package pigz.
+(Reading database ... 87696 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../1-containerd.io_1.7.27-1_amd64.deb ...
+Unpacking containerd.io (1.7.27-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../2-docker-buildx-plugin_0.23.0-1~ubuntu.20.04~focal_amd64.deb ...
+Unpacking docker-buildx-plugin (0.23.0-1~ubuntu.20.04~focal) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../3-docker-ce-cli_5%3a28.1.1-1~ubuntu.20.04~focal_amd64.deb ...
+Unpacking docker-ce-cli (5:28.1.1-1~ubuntu.20.04~focal) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../4-docker-ce_5%3a28.1.1-1~ubuntu.20.04~focal_amd64.deb ...
+Unpacking docker-ce (5:28.1.1-1~ubuntu.20.04~focal) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../5-docker-ce-rootless-extras_5%3a28.1.1-1~ubuntu.20.04~focal_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:28.1.1-1~ubuntu.20.04~focal) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../6-docker-compose-plugin_2.35.1-1~ubuntu.20.04~focal_amd64.deb ...
+Unpacking docker-compose-plugin (2.35.1-1~ubuntu.20.04~focal) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../7-libltdl7_2.4.7-7build1_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.7-7build1) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../8-libslirp0_4.7.0-1ubuntu3_amd64.deb ...
+Unpacking libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../9-slirp4netns_1.2.1-1build2_amd64.deb ...
+Unpacking slirp4netns (1.2.1-1build2) ...
+Setting up docker-buildx-plugin (0.23.0-1~ubuntu.20.04~focal) ...
+Setting up containerd.io (1.7.27-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up docker-compose-plugin (2.35.1-1~ubuntu.20.04~focal) ...
+Setting up libltdl7:amd64 (2.4.7-7build1) ...
+Setting up docker-ce-cli (5:28.1.1-1~ubuntu.20.04~focal) ...
+Setting up libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Setting up pigz (2.8-1) ...
+Setting up docker-ce-rootless-extras (5:28.1.1-1~ubuntu.20.04~focal) ...
+Setting up slirp4netns (1.2.1-1build2) ...
+Setting up docker-ce (5:28.1.1-1~ubuntu.20.04~focal) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-32-116:~# history
+    1  sudo apt-get update
+    2  apt-get install ./docker-desktop-amd64.deb
+    3  systemctl --user start docker-desktop
+    4  N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+    5  /opt/docker-deskto
+    6  sudo apt-get install ./docker-desktop-amd64.deb
+    7  sudo apt-get update
+    8  cd downloads/
+    9  touch install_docker.sh
+   10  ls -al install_docker.sh
+   11  chmod +* install_docker.sh
+   12  chmod + install_docker.sh
+   13  ls -al install_docker.sh
+   14  code install_docker.sh
+   15  ./install_docker.sh
+   16  sudo apt install gnome-terminal
+   17  sudo apt-get install ./docker-desktop-amd64.deb
+   18  N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+   19  systemctl --user start docker-desktop
+   20  sudo apt install gnome-terminal
+   21  systemctl --user start docker-desktop
+   22  cd
+   23  sudo apt update
+   24  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   25  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   26  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+   27  apt-cache policy docker-ce
+   28  sudo apt install docker-ce
+   29  history
+root@ip-172-31-32-116:~# ^C
+root@ip-172-31-32-116:~# sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2025-08-21 05:12:16 UTC; 2min 46s ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 6784 (dockerd)
+      Tasks: 8
+     Memory: 30.6M (peak: 32.1M)
+        CPU: 369ms
+     CGroup: /system.slice/docker.service
+             └─6784 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 21 05:12:15 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:15.487934401Z" level=info msg="detected 127.0.0.53 nameserver, as>
+Aug 21 05:12:15 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:15.634929286Z" level=info msg="Creating a containerd client" addr>
+Aug 21 05:12:15 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:15.700051070Z" level=info msg="Loading containers: start."
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.122090209Z" level=info msg="Loading containers: done."
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.146339584Z" level=info msg="Docker daemon" commit=01f442b cont>
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.146443381Z" level=info msg="Initializing buildkit"
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.186367996Z" level=info msg="Completed buildkit initialization"
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.199092280Z" level=info msg="Daemon has completed initializatio>
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.199175117Z" level=info msg="API listen on /run/docker.sock"
+Aug 21 05:12:16 ip-172-31-32-116 systemd[1]: Started docker.service - Docker Application Container Engine.
+lines 1-22/22 (END)
+root@ip-172-31-32-116:~#
+root@ip-172-31-32-116:~# ^C
+root@ip-172-31-32-116:~# sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2025-08-21 05:12:16 UTC; 11min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 6784 (dockerd)
+      Tasks: 8
+     Memory: 30.8M (peak: 32.1M)
+        CPU: 405ms
+     CGroup: /system.slice/docker.service
+             └─6784 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 21 05:12:15 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:15.487934401Z" level=info msg="detected 127.0.0.53 nameserver, as>
+Aug 21 05:12:15 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:15.634929286Z" level=info msg="Creating a containerd client" addr>
+Aug 21 05:12:15 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:15.700051070Z" level=info msg="Loading containers: start."
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.122090209Z" level=info msg="Loading containers: done."
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.146339584Z" level=info msg="Docker daemon" commit=01f442b cont>
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.146443381Z" level=info msg="Initializing buildkit"
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.186367996Z" level=info msg="Completed buildkit initialization"
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.199092280Z" level=info msg="Daemon has completed initializatio>
+Aug 21 05:12:16 ip-172-31-32-116 dockerd[6784]: time="2025-08-21T05:12:16.199175117Z" level=info msg="API listen on /run/docker.sock"
+Aug 21 05:12:16 ip-172-31-32-116 systemd[1]: Started docker.service - Docker Application Container Engine.
+
+root@ip-172-31-32-116:~# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@ip-172-31-32-116:~# docker immages
+docker: unknown command: docker immages
+
+Run 'docker --help' for more information
+root@ip-172-31-32-116:~# docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+b1badc6e5066: Pull complete
+a2da0c0f2353: Pull complete
+e5d9bb0b85cc: Pull complete
+14a859b5ba24: Pull complete
+716cdf61af59: Pull complete
+14e422fd20a0: Pull complete
+c3741b707ce6: Pull complete
+Digest: sha256:33e0bbc7ca9ecf108140af6288c7c9d1ecc77548cbfd3952fd8466a75edefe57
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+root@ip-172-31-32-116:~# docker immages
+docker: unknown command: docker immages
+
+Run 'docker --help' for more information
+root@ip-172-31-32-116:~# docker immage
+docker: unknown command: docker immage
+
+Run 'docker --help' for more information
+root@ip-172-31-32-116:~# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    ad5708199ec7   7 days ago   192MB
+root@ip-172-31-32-116:~# docker history nginx
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+ad5708199ec7   7 days ago    CMD ["nginx" "-g" "daemon off;"]                0B        buildkit.dockerfile.v0
+<missing>      7 days ago    STOPSIGNAL SIGQUIT                              0B        buildkit.dockerfile.v0
+<missing>      7 days ago    EXPOSE map[80/tcp:{}]                           0B        buildkit.dockerfile.v0
+<missing>      7 days ago    ENTRYPOINT ["/docker-entrypoint.sh"]            0B        buildkit.dockerfile.v0
+<missing>      7 days ago    COPY 30-tune-worker-processes.sh /docker-ent…   4.62kB    buildkit.dockerfile.v0
+<missing>      7 days ago    COPY 20-envsubst-on-templates.sh /docker-ent…   3.02kB    buildkit.dockerfile.v0
+<missing>      7 days ago    COPY 15-local-resolvers.envsh /docker-entryp…   389B      buildkit.dockerfile.v0
+<missing>      7 days ago    COPY 10-listen-on-ipv6-by-default.sh /docker…   2.12kB    buildkit.dockerfile.v0
+<missing>      7 days ago    COPY docker-entrypoint.sh / # buildkit          1.62kB    buildkit.dockerfile.v0
+<missing>      7 days ago    RUN /bin/sh -c set -x     && groupadd --syst…   118MB     buildkit.dockerfile.v0
+<missing>      7 days ago    ENV DYNPKG_RELEASE=1~bookworm                   0B        buildkit.dockerfile.v0
+<missing>      7 days ago    ENV PKG_RELEASE=1~bookworm                      0B        buildkit.dockerfile.v0
+<missing>      7 days ago    ENV NJS_RELEASE=1~bookworm                      0B        buildkit.dockerfile.v0
+<missing>      7 days ago    ENV NJS_VERSION=0.9.1                           0B        buildkit.dockerfile.v0
+<missing>      7 days ago    ENV NGINX_VERSION=1.29.1                        0B        buildkit.dockerfile.v0
+<missing>      7 days ago    LABEL maintainer=NGINX Docker Maintainers <d…   0B        buildkit.dockerfile.v0
+<missing>      10 days ago   # debian.sh --arch 'amd64' out/ 'bookworm' '…   74.8MB    debuerreotype 0.15
+root@ip-172-31-32-116:~# docker create ^C
+root@ip-172-31-32-116:~# docker create ad5708199ec7
+06fc94c3036b79194571b8741c2d89565a73fece91fa0c5b6eb039dc5aac5057
+root@ip-172-31-32-116:~# docker ps -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS    PORTS     NAMES
+06fc94c3036b   ad5708199ec7   "/docker-entrypoint.…"   27 seconds ago   Created             adoring_dijkstra
+root@ip-172-31-32-116:~# docker exec -it 06fc94c3036b --/bin/bash
+Error response from daemon: container 06fc94c3036b79194571b8741c2d89565a73fece91fa0c5b6eb039dc5aac5057 is not running
+root@ip-172-31-32-116:~# docker exec -it 06fc94c3036b /bin/bash
+Error response from daemon: container 06fc94c3036b79194571b8741c2d89565a73fece91fa0c5b6eb039dc5aac5057 is not running
+root@ip-172-31-32-116:~# docker exec -it 06fc94c3036b/bin/bash
+docker: 'docker exec' requires at least 2 arguments
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+See 'docker exec --help' for more information
+root@ip-172-31-32-116:~# docker --version
+Docker version 28.1.1, build 4eba377
+root@ip-172-31-32-116:~# docker search nginx
+NAME                                     DESCRIPTION                                     STARS     OFFICIAL
+nginx                                    Official build of Nginx.                        20941     [OK]
+nginx/nginx-ingress                      NGINX and  NGINX Plus Ingress Controllers fo…   108
+nginx/nginx-prometheus-exporter          NGINX Prometheus Exporter for NGINX and NGIN…   50
+nginx/unit                               This repository is retired, use the Docker o…   65
+nginx/nginx-ingress-operator             NGINX Ingress Operator for NGINX and NGINX P…   2
+nginx/docker-extension                                                                   0
+nginx/nginx-quic-qns                     NGINX QUIC interop                              1
+nginx/nginxaas-loadbalancer-kubernetes                                                   1
+nginx/unit-preview                       Unit preview features                           0
+bitnami/nginx                            Bitnami container image for NGINX               201
+ubuntu/nginx                             Nginx, a high-performance reverse proxy & we…   133
+bitnamicharts/nginx                      Bitnami Helm chart for NGINX Open Source        1
+kasmweb/nginx                            An Nginx image based off nginx:alpine and in…   8
+rancher/nginx                                                                            2
+linuxserver/nginx                        An Nginx container, brought to you by LinuxS…   231
+dtagdevsec/nginx                         T-Pot Nginx                                     0
+paketobuildpacks/nginx                                                                   0
+vmware/nginx                                                                             3
+chainguard/nginx                         Build, ship and run secure software with Cha…   4
+gluufederation/nginx                      A customized NGINX image containing a consu…   1
+intel/nginx                                                                              0
+antrea/nginx                             Nginx server used for Antrea e2e testing        0
+circleci/nginx                           This image is for internal use                  2
+docksal/nginx                            Nginx service image for Docksal                 1
+corpusops/nginx                          https://github.com/corpusops/docker-images/     1
+root@ip-172-31-32-116:~# docker inspect image nginx
+[
+    {
+        "Id": "sha256:ad5708199ec7d169c6837fe46e1646603d0f7d0a0f54d3cd8d07bc1c818d0224",
+        "RepoTags": [
+            "nginx:latest"
+        ],
+        "RepoDigests": [
+            "nginx@sha256:33e0bbc7ca9ecf108140af6288c7c9d1ecc77548cbfd3952fd8466a75edefe57"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-08-13T16:34:01Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.29.1",
+                "NJS_VERSION=0.9.1",
+                "NJS_RELEASE=1~bookworm",
+                "PKG_RELEASE=1~bookworm",
+                "DYNPKG_RELEASE=1~bookworm"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 192385800,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/318910b88e745a8f62b60bd63f4ae3d9beb12316023b308d8341a0aa416ed15a/diff:/var/lib/docker/overlay2/de27cd1084dfc3f7a96ac53d2579d49105185aa9ca73192a6100f7198f026b1d/diff:/var/lib/docker/overlay2/38cbd7c5902455fce2bceb20f80fd5b28431d65957a8352ec1ebbbf1e99e05ff/diff:/var/lib/docker/overlay2/1149e6d590f0af17215e542ce98e53b32015fae06db40a1ace40c3052116f7f4/diff:/var/lib/docker/overlay2/80b98964b3a4dc970ab362b89f06c4f2cf5657788ce6c730e303f16b132cb313/diff:/var/lib/docker/overlay2/21f5840f8abda9b803a5de47ab05970b67b9d7585a9ee09b35ab67a313c05a64/diff",
+                "MergedDir": "/var/lib/docker/overlay2/401569e422fd1311fc3e9c1c510c466624cca7f87d25746b74f9c4ebbf1e59e9/merged",
+                "UpperDir": "/var/lib/docker/overlay2/401569e422fd1311fc3e9c1c510c466624cca7f87d25746b74f9c4ebbf1e59e9/diff",
+                "WorkDir": "/var/lib/docker/overlay2/401569e422fd1311fc3e9c1c510c466624cca7f87d25746b74f9c4ebbf1e59e9/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:eb5f13bce9936c760b9fa73aeb1b608787daa36106cc888104132e353ed37252",
+                "sha256:dab69e9f41e95b695c830dd40de509cac70228535889014e632834462f5683fa",
+                "sha256:39bc11fab5202a44b1cd5ce2dffd1db01a5e4fbf6dbf3382be700b2b5b337fe8",
+                "sha256:2988603ca26438649eac2757fb9dd9ba08319f432d4971420cfa2134a4dcafa7",
+                "sha256:a0e5983a25a50e0523bf004411cbbbfc08b6735096460ec2e3e0e919633632c1",
+                "sha256:129b375526fcf7be9015a58cd3abf6f623b6f82244e575de11905b9bad61e8f7",
+                "sha256:45c2d10807fb1f09c464da6f87fc08f863031b0cff7689378e2fa8f9ac6956bd"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
+Error: No such object: image
+ 1  sudo apt-get update
+    2  apt-get install ./docker-desktop-amd64.deb
+    3  systemctl --user start docker-desktop
+    4  N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+    5  /opt/docker-deskto
+    6  sudo apt-get install ./docker-desktop-amd64.deb
+    7  sudo apt-get update
+    8  cd downloads/
+    9  touch install_docker.sh
+   10  ls -al install_docker.sh
+   11  chmod +* install_docker.sh
+   12  chmod + install_docker.sh
+   13  ls -al install_docker.sh
+   14  code install_docker.sh
+   15  ./install_docker.sh
+   16  sudo apt install gnome-terminal
+   17  sudo apt-get install ./docker-desktop-amd64.deb
+   18  N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+   19  systemctl --user start docker-desktop
+   20  sudo apt install gnome-terminal
+   21  systemctl --user start docker-desktop
+   22  cd
+   23  sudo apt update
+   24  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   25  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   26  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+   27  apt-cache policy docker-ce
+   28  sudo apt install docker-ce
+   29  history
+   30  sudo systemctl status docker
+   31  docker ps
+   32  docker immages
+   33  docker pull nginx
+   34  docker immages
+   35  docker immage
+   36  docker images
+   37  docker history nginx
+   38  docker create ad5708199ec7
+   39  docker ps -a
+   40  docker exec -it 06fc94c3036b --/bin/bash
+   41  docker exec -it 06fc94c3036b /bin/bash
+   42  docker exec -it 06fc94c3036b/bin/bash
+   43  docker --version
+   44  docker search nginx
+   45  docker inspect image nginx
+   46  docker create nginx
+   47  docker ps
+   48  docker ps -a
+   49  docker start c4c27d7b66d8
+   50  history
+   51  cd
+   52  hostname
+   53  iconfig
+   54  docker network ls
+   55  docker run -d --name httpd01 -p 8080:80 httpd
+   56  cd
+   57  docker run --d --name nginx01 -p 8081:80 nginx
+   58  docker run -d --name nginx01 -p 8081:80 nginx
+   59  ifconfig
+   60  ps -a
+   61  histoy
+   62  history
+
