@@ -1,0 +1,1343 @@
+Authenticating with public key "Imported-Openssh-Key"
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v25.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ubuntu@13.234.78.128                                │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✓  (remote display is forwarded through SSH)  │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Aug 25 04:08:56 UTC 2025
+
+  System load:  0.09              Processes:             114
+  Usage of /:   25.9% of 6.71GB   Users logged in:       0
+  Memory usage: 22%               IPv4 address for enX0: 172.31.35.115
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Aug 25 04:01:31 2025 from 103.211.38.214
+ubuntu@ip-172-31-35-115:~$ sudo su
+root@ip-172-31-35-115:/home/ubuntu# cd
+root@ip-172-31-35-115:~# sudo yum install python3 -y
+sudo: yum: command not found
+root@ip-172-31-35-115:~# yum install python3 -y
+Command 'yum' not found, did you mean:
+  command 'num' from deb quickcal (2.4-1)
+  command 'uum' from deb freewnn-jserver (1.1.1~a021+cvs20130302-7build1)
+  command 'zum' from deb perforate (1.2-5.3)
+  command 'sum' from deb coreutils (9.4-2ubuntu2)
+Try: apt install <deb name>
+root@ip-172-31-35-115:~# sudo yum install python3 -y
+sudo: yum: command not found
+root@ip-172-31-35-115:~# sudo yum install gcc python3-devel -y
+sudo: yum: command not found
+root@ip-172-31-35-115:~# sudo pro status
+SERVICE          AVAILABLE  DESCRIPTION
+anbox-cloud      yes        Scalable Android in the cloud
+esm-apps         yes        Expanded Security Maintenance for Applications
+esm-infra        yes        Expanded Security Maintenance for Infrastructure
+fips-updates     yes        FIPS compliant crypto packages with stable security updates
+landscape        yes        Management and administration tool for Ubuntu
+livepatch        yes        Current kernel is not covered by livepatch
+realtime-kernel  yes        Ubuntu kernel with PREEMPT_RT patches integrated
+usg              yes        Security compliance and audit tools
+
+For a list of all Ubuntu Pro services, run 'pro status --all'
+
+This machine is not attached to an Ubuntu Pro subscription.
+See https://ubuntu.com/pro
+
+Kernels covered by livepatch are listed here: https://ubuntu.com/security/livepatch/docs/kernels
+root@ip-172-31-35-115:~# sudo yum install python3 -y
+sudo: yum: command not found
+root@ip-172-31-35-115:~# sudo apt update
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1352 kB]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [269 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1123 kB]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [288 kB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [26.0 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1731 kB]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [384 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [33.2 kB]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [6772 B]
+Get:25 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:26 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [592 B]
+Get:27 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [39.9 kB]
+Get:28 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9152 B]
+Get:29 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7068 B]
+Get:30 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [272 B]
+Get:31 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [30.2 kB]
+Get:32 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [17.4 kB]
+Get:33 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [19.2 kB]
+Get:34 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1304 B]
+Get:35 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:36 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:37 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:38 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:39 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1083 kB]
+Get:40 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:41 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [881 kB]
+Get:42 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [195 kB]
+Get:43 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.2 kB]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [17.0 kB]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [18.5 kB]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [4288 B]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [380 B]
+Fetched 34.2 MB in 6s (5372 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+5 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@ip-172-31-35-115:~# sudo apt install python3 -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+python3 is already the newest version (3.12.3-0ubuntu2).
+python3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+root@ip-172-31-35-115:~# sudo apt install gcc python3-devel -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package python3-devel
+root@ip-172-31-35-115:~# sudo apt install gcc python3-dev -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu fontconfig-config
+  fonts-dejavu-core fonts-dejavu-mono gcc-13 gcc-13-base gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu javascript-common libaom3
+  libasan8 libatomic1 libbinutils libc-dev-bin libc-devtools libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libde265-0
+  libdeflate0 libexpat1-dev libfontconfig1 libgcc-13-dev libgd3 libgomp1 libgprofng0 libheif-plugin-aomdec libheif-plugin-aomenc
+  libheif-plugin-libde265 libheif1 libhwasan0 libisl23 libitm1 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblerc4 liblsan0 libmpc3 libpython3-dev libpython3.12-dev libpython3.12-minimal libpython3.12-stdlib
+  libpython3.12t64 libquadmath0 libsframe1 libsharpyuv0 libtiff6 libtsan2 libubsan1 libwebp7 libxpm4 linux-libc-dev manpages-dev
+  python3.12 python3.12-dev python3.12-minimal rpcsvc-proto zlib1g-dev
+Suggested packages:
+  binutils-doc gprofng-gui cpp-doc gcc-13-locales cpp-13-doc gcc-multilib make autoconf automake libtool flex bison gdb gcc-doc
+  gcc-13-multilib gcc-13-doc gdb-x86-64-linux-gnu apache2 | lighttpd | httpd glibc-doc libgd-tools libheif-plugin-x265
+  libheif-plugin-ffmpegdec libheif-plugin-jpegdec libheif-plugin-jpegenc libheif-plugin-j2kdec libheif-plugin-j2kenc
+  libheif-plugin-rav1e libheif-plugin-svtenc python3.12-venv python3.12-doc binfmt-support
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu fontconfig-config
+  fonts-dejavu-core fonts-dejavu-mono gcc gcc-13 gcc-13-base gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu javascript-common libaom3
+  libasan8 libatomic1 libbinutils libc-dev-bin libc-devtools libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libde265-0
+  libdeflate0 libexpat1-dev libfontconfig1 libgcc-13-dev libgd3 libgomp1 libgprofng0 libheif-plugin-aomdec libheif-plugin-aomenc
+  libheif-plugin-libde265 libheif1 libhwasan0 libisl23 libitm1 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblerc4 liblsan0 libmpc3 libpython3-dev libpython3.12-dev libquadmath0 libsframe1 libsharpyuv0 libtiff6 libtsan2
+  libubsan1 libwebp7 libxpm4 linux-libc-dev manpages-dev python3-dev python3.12-dev rpcsvc-proto zlib1g-dev
+The following packages will be upgraded:
+  libpython3.12-minimal libpython3.12-stdlib libpython3.12t64 python3.12 python3.12-minimal
+5 upgraded, 67 newly installed, 0 to remove and 0 not upgraded.
+Need to get 77.8 MB of archives.
+After this operation, 241 MB of additional disk space will be used.
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12t64 amd64 3.12.3-1ubuntu0.8 [2355 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.8 [651 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.8 [2068 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.8 [2334 kB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.8 [836 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-common amd64 2.42-4ubuntu2.5 [240 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libsframe1 amd64 2.42-4ubuntu2.5 [15.5 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libbinutils amd64 2.42-4ubuntu2.5 [577 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf-nobfd0 amd64 2.42-4ubuntu2.5 [97.7 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.5 [94.5 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.5 [849 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.5 [2462 kB]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils amd64 2.42-4ubuntu2.5 [18.1 kB]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04 [51.5 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libisl23 amd64 0.26-3build1.1 [680 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpc3 amd64 1.3.1-1build1.1 [54.6 kB]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [10.7 MB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04 [1038 B]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 cpp-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [5326 B]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 cpp amd64 4:13.2.0-7ubuntu1 [22.4 kB]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 fonts-dejavu-mono all 2.37-8 [502 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 fonts-dejavu-core all 2.37-8 [835 kB]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 fontconfig-config amd64 2.15.0-1.1ubuntu2 [37.3 kB]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libcc1-0 amd64 14.2.0-4ubuntu2~24.04 [48.0 kB]
+Get:25 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04 [148 kB]
+Get:26 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libitm1 amd64 14.2.0-4ubuntu2~24.04 [29.7 kB]
+Get:27 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04 [10.5 kB]
+Get:28 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libasan8 amd64 14.2.0-4ubuntu2~24.04 [3031 kB]
+Get:29 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 liblsan0 amd64 14.2.0-4ubuntu2~24.04 [1322 kB]
+Get:30 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libtsan2 amd64 14.2.0-4ubuntu2~24.04 [2772 kB]
+Get:31 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libubsan1 amd64 14.2.0-4ubuntu2~24.04 [1184 kB]
+Get:32 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libhwasan0 amd64 14.2.0-4ubuntu2~24.04 [1641 kB]
+Get:33 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libquadmath0 amd64 14.2.0-4ubuntu2~24.04 [153 kB]
+Get:34 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04 [2681 kB]
+Get:35 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [21.1 MB]
+Get:36 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04 [494 kB]
+Get:37 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 gcc-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [1212 B]
+Get:38 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 gcc amd64 4:13.2.0-7ubuntu1 [5018 B]
+Get:39 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 javascript-common all 11+nmu1 [5936 B]
+Get:40 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libaom3 amd64 3.8.2-2ubuntu0.1 [1941 kB]
+Get:41 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-dev-bin amd64 2.39-0ubuntu8.5 [20.4 kB]
+Get:42 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libfontconfig1 amd64 2.15.0-1.1ubuntu2 [139 kB]
+Get:43 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libsharpyuv0 amd64 1.3.2-0.4build3 [15.8 kB]
+Get:44 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif-plugin-aomdec amd64 1.17.6-1ubuntu4.1 [10.4 kB]
+Get:45 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libde265-0 amd64 1.0.15-1build3 [166 kB]
+Get:46 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif-plugin-libde265 amd64 1.17.6-1ubuntu4.1 [8176 B]
+Get:47 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif1 amd64 1.17.6-1ubuntu4.1 [275 kB]
+Get:48 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libjpeg-turbo8 amd64 2.1.5-2ubuntu2 [150 kB]
+Get:49 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libjpeg8 amd64 8c-2ubuntu11 [2148 B]
+Get:50 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libdeflate0 amd64 1.19-1build1.1 [43.9 kB]
+Get:51 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libjbig0 amd64 2.1-6.1ubuntu2 [29.7 kB]
+Get:52 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 liblerc4 amd64 4.0.0+ds-4ubuntu2 [179 kB]
+Get:53 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libwebp7 amd64 1.3.2-0.4build3 [230 kB]
+Get:54 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiff6 amd64 4.5.1+git230720-4ubuntu2.3 [199 kB]
+Get:55 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxpm4 amd64 1:3.5.17-1build2 [36.5 kB]
+Get:56 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libgd3 amd64 2.3.3-9ubuntu5 [128 kB]
+Get:57 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-devtools amd64 2.39-0ubuntu8.5 [29.3 kB]
+Get:58 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 linux-libc-dev amd64 6.8.0-78.78 [1907 kB]
+Get:59 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libcrypt-dev amd64 1:4.4.36-4build1 [112 kB]
+Get:60 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu7 [67.4 kB]
+Get:61 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6-dev amd64 2.39-0ubuntu8.5 [2123 kB]
+Get:62 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1-dev amd64 2.6.1-2ubuntu0.3 [140 kB]
+Get:63 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif-plugin-aomenc amd64 1.17.6-1ubuntu4.1 [14.7 kB]
+Get:64 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [328 kB]
+Get:65 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [118 kB]
+Get:66 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libjs-sphinxdoc all 7.2.6-6 [149 kB]
+Get:67 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g-dev amd64 1:1.3.dfsg-3.1ubuntu2.1 [894 kB]
+Get:68 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.8 [5677 kB]
+Get:69 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-dev amd64 3.12.3-0ubuntu2 [10.3 kB]
+Get:70 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 manpages-dev all 6.7-2 [2013 kB]
+Get:71 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-dev amd64 3.12.3-1ubuntu0.8 [498 kB]
+Get:72 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-dev amd64 3.12.3-0ubuntu2 [26.7 kB]
+Fetched 77.8 MB in 1s (73.9 MB/s)
+Extracting templates from packages: 100%
+(Reading database ... 71718 files and directories currently installed.)
+Preparing to unpack .../00-libpython3.12t64_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12t64:amd64 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../01-python3.12_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking python3.12 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../02-libpython3.12-stdlib_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../03-python3.12-minimal_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking python3.12-minimal (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../04-libpython3.12-minimal_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../05-binutils-common_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking binutils-common:amd64 (2.42-4ubuntu2.5) ...
+Selecting previously unselected package libsframe1:amd64.
+Preparing to unpack .../06-libsframe1_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking libsframe1:amd64 (2.42-4ubuntu2.5) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../07-libbinutils_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking libbinutils:amd64 (2.42-4ubuntu2.5) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../08-libctf-nobfd0_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.42-4ubuntu2.5) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../09-libctf0_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking libctf0:amd64 (2.42-4ubuntu2.5) ...
+Selecting previously unselected package libgprofng0:amd64.
+Preparing to unpack .../10-libgprofng0_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking libgprofng0:amd64 (2.42-4ubuntu2.5) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../11-binutils-x86-64-linux-gnu_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.42-4ubuntu2.5) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../12-binutils_2.42-4ubuntu2.5_amd64.deb ...
+Unpacking binutils (2.42-4ubuntu2.5) ...
+Selecting previously unselected package gcc-13-base:amd64.
+Preparing to unpack .../13-gcc-13-base_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../14-libisl23_0.26-3build1.1_amd64.deb ...
+Unpacking libisl23:amd64 (0.26-3build1.1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../15-libmpc3_1.3.1-1build1.1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.3.1-1build1.1) ...
+Selecting previously unselected package cpp-13-x86-64-linux-gnu.
+Preparing to unpack .../16-cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package cpp-13.
+Preparing to unpack .../17-cpp-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking cpp-13 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package cpp-x86-64-linux-gnu.
+Preparing to unpack .../18-cpp-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../19-cpp_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking cpp (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package fonts-dejavu-mono.
+Preparing to unpack .../20-fonts-dejavu-mono_2.37-8_all.deb ...
+Unpacking fonts-dejavu-mono (2.37-8) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../21-fonts-dejavu-core_2.37-8_all.deb ...
+Unpacking fonts-dejavu-core (2.37-8) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../22-fontconfig-config_2.15.0-1.1ubuntu2_amd64.deb ...
+Unpacking fontconfig-config (2.15.0-1.1ubuntu2) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../23-libcc1-0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../24-libgomp1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../25-libitm1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libitm1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../26-libatomic1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../27-libasan8_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libasan8:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../28-liblsan0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking liblsan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../29-libtsan2_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libtsan2:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../30-libubsan1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libubsan1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libhwasan0:amd64.
+Preparing to unpack .../31-libhwasan0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libhwasan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../32-libquadmath0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libgcc-13-dev:amd64.
+Preparing to unpack .../33-libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package gcc-13-x86-64-linux-gnu.
+Preparing to unpack .../34-gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package gcc-13.
+Preparing to unpack .../35-gcc-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-13 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package gcc-x86-64-linux-gnu.
+Preparing to unpack .../36-gcc-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../37-gcc_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking gcc (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../38-javascript-common_11+nmu1_all.deb ...
+Unpacking javascript-common (11+nmu1) ...
+Selecting previously unselected package libaom3:amd64.
+Preparing to unpack .../39-libaom3_3.8.2-2ubuntu0.1_amd64.deb ...
+Unpacking libaom3:amd64 (3.8.2-2ubuntu0.1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../40-libc-dev-bin_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc-dev-bin (2.39-0ubuntu8.5) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../41-libfontconfig1_2.15.0-1.1ubuntu2_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.15.0-1.1ubuntu2) ...
+Selecting previously unselected package libsharpyuv0:amd64.
+Preparing to unpack .../42-libsharpyuv0_1.3.2-0.4build3_amd64.deb ...
+Unpacking libsharpyuv0:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libheif-plugin-aomdec:amd64.
+Preparing to unpack .../43-libheif-plugin-aomdec_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif-plugin-aomdec:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libde265-0:amd64.
+Preparing to unpack .../44-libde265-0_1.0.15-1build3_amd64.deb ...
+Unpacking libde265-0:amd64 (1.0.15-1build3) ...
+Selecting previously unselected package libheif-plugin-libde265:amd64.
+Preparing to unpack .../45-libheif-plugin-libde265_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif-plugin-libde265:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libheif1:amd64.
+Preparing to unpack .../46-libheif1_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif1:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../47-libjpeg-turbo8_2.1.5-2ubuntu2_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.5-2ubuntu2) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../48-libjpeg8_8c-2ubuntu11_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu11) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../49-libdeflate0_1.19-1build1.1_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.19-1build1.1) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../50-libjbig0_2.1-6.1ubuntu2_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-6.1ubuntu2) ...
+Selecting previously unselected package liblerc4:amd64.
+Preparing to unpack .../51-liblerc4_4.0.0+ds-4ubuntu2_amd64.deb ...
+Unpacking liblerc4:amd64 (4.0.0+ds-4ubuntu2) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../52-libwebp7_1.3.2-0.4build3_amd64.deb ...
+Unpacking libwebp7:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libtiff6:amd64.
+Preparing to unpack .../53-libtiff6_4.5.1+git230720-4ubuntu2.3_amd64.deb ...
+Unpacking libtiff6:amd64 (4.5.1+git230720-4ubuntu2.3) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../54-libxpm4_1%3a3.5.17-1build2_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.17-1build2) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../55-libgd3_2.3.3-9ubuntu5_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.3-9ubuntu5) ...
+Selecting previously unselected package libc-devtools.
+Preparing to unpack .../56-libc-devtools_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc-devtools (2.39-0ubuntu8.5) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../57-linux-libc-dev_6.8.0-78.78_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (6.8.0-78.78) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../58-libcrypt-dev_1%3a4.4.36-4build1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../59-rpcsvc-proto_1.4.2-0ubuntu7_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu7) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../60-libc6-dev_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.39-0ubuntu8.5) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../61-libexpat1-dev_2.6.1-2ubuntu0.3_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.6.1-2ubuntu0.3) ...
+Selecting previously unselected package libheif-plugin-aomenc:amd64.
+Preparing to unpack .../62-libheif-plugin-aomenc_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif-plugin-aomenc:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../63-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../64-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../65-libjs-sphinxdoc_7.2.6-6_all.deb ...
+Unpacking libjs-sphinxdoc (7.2.6-6) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../66-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.1) ...
+Selecting previously unselected package libpython3.12-dev:amd64.
+Preparing to unpack .../67-libpython3.12-dev_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12-dev:amd64 (3.12.3-1ubuntu0.8) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../68-libpython3-dev_3.12.3-0ubuntu2_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.12.3-0ubuntu2) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../69-manpages-dev_6.7-2_all.deb ...
+Unpacking manpages-dev (6.7-2) ...
+Selecting previously unselected package python3.12-dev.
+Preparing to unpack .../70-python3.12-dev_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking python3.12-dev (3.12.3-1ubuntu0.8) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../71-python3-dev_3.12.3-0ubuntu2_amd64.deb ...
+Unpacking python3-dev (3.12.3-0ubuntu2) ...
+Setting up javascript-common (11+nmu1) ...
+Setting up libsharpyuv0:amd64 (1.3.2-0.4build3) ...
+Setting up libaom3:amd64 (3.8.2-2ubuntu0.1) ...
+Setting up manpages-dev (6.7-2) ...
+Setting up liblerc4:amd64 (4.0.0+ds-4ubuntu2) ...
+Setting up libxpm4:amd64 (1:3.5.17-1build2) ...
+Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up binutils-common:amd64 (2.42-4ubuntu2.5) ...
+Setting up libdeflate0:amd64 (1.19-1build1.1) ...
+Setting up linux-libc-dev:amd64 (6.8.0-78.78) ...
+Setting up libctf-nobfd0:amd64 (2.42-4ubuntu2.5) ...
+Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libjbig0:amd64 (2.1-6.1ubuntu2) ...
+Setting up libsframe1:amd64 (2.42-4ubuntu2.5) ...
+Setting up rpcsvc-proto (1.4.2-0ubuntu7) ...
+Setting up gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
+Setting up libquadmath0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up fonts-dejavu-mono (2.37-8) ...
+Setting up libmpc3:amd64 (1.3.1-1build1.1) ...
+Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up fonts-dejavu-core (2.37-8) ...
+Setting up libjpeg-turbo8:amd64 (2.1.5-2ubuntu2) ...
+Setting up libwebp7:amd64 (1.3.2-0.4build3) ...
+Setting up libubsan1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libhwasan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+Setting up libasan8:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libtsan2:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up libbinutils:amd64 (2.42-4ubuntu2.5) ...
+Setting up libisl23:amd64 (0.26-3build1.1) ...
+Setting up libde265-0:amd64 (1.0.15-1build3) ...
+Setting up libc-dev-bin (2.39-0ubuntu8.5) ...
+Setting up libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up liblsan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libitm1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up libctf0:amd64 (2.42-4ubuntu2.5) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu11) ...
+Setting up python3.12-minimal (3.12.3-1ubuntu0.8) ...
+Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Setting up fontconfig-config (2.15.0-1.1ubuntu2) ...
+Setting up python3.12 (3.12.3-1ubuntu0.8) ...
+Setting up libpython3.12t64:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up libgprofng0:amd64 (2.42-4ubuntu2.5) ...
+Setting up libjs-sphinxdoc (7.2.6-6) ...
+Setting up libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Setting up libtiff6:amd64 (4.5.1+git230720-4ubuntu2.3) ...
+Setting up libc6-dev:amd64 (2.39-0ubuntu8.5) ...
+Setting up binutils-x86-64-linux-gnu (2.42-4ubuntu2.5) ...
+Setting up cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up cpp-13 (13.3.0-6ubuntu2~24.04) ...
+Setting up gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Setting up binutils (2.42-4ubuntu2.5) ...
+Setting up libexpat1-dev:amd64 (2.6.1-2ubuntu0.3) ...
+Setting up gcc-13 (13.3.0-6ubuntu2~24.04) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.1) ...
+Setting up cpp (4:13.2.0-7ubuntu1) ...
+Setting up gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up libpython3.12-dev:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up gcc (4:13.2.0-7ubuntu1) ...
+Setting up python3.12-dev (3.12.3-1ubuntu0.8) ...
+Setting up libpython3-dev:amd64 (3.12.3-0ubuntu2) ...
+Setting up python3-dev (3.12.3-0ubuntu2) ...
+Setting up libheif-plugin-aomdec:amd64 (1.17.6-1ubuntu4.1) ...
+Setting up libheif1:amd64 (1.17.6-1ubuntu4.1) ...
+Setting up libheif-plugin-libde265:amd64 (1.17.6-1ubuntu4.1) ...
+Setting up libheif-plugin-aomenc:amd64 (1.17.6-1ubuntu4.1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Processing triggers for systemd (255.4-1ubuntu8.10) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up libfontconfig1:amd64 (2.15.0-1.1ubuntu2) ...
+Setting up libgd3:amd64 (2.3.3-9ubuntu5) ...
+Setting up libc-devtools (2.39-0ubuntu8.5) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Scanning processes...
+Scanning candidates...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart networkd-dispatcher.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-35-115:~# sudo pip3 install virtualenv
+sudo: pip3: command not found
+root@ip-172-31-35-115:~# pip3 install --user virtualenv
+Command 'pip3' not found, but can be installed with:
+apt install python3-pip
+root@ip-172-31-35-115:~# sudo apt install python3-virtualenv -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  build-essential bzip2 dpkg-dev fakeroot g++ g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libdpkg-perl libfakeroot libfile-fcntllock-perl libstdc++-13-dev lto-disabled-list
+  make python3-distlib python3-filelock python3-pip-whl python3-platformdirs python3-setuptools-whl python3-wheel-whl
+Suggested packages:
+  bzip2-doc debian-keyring g++-multilib g++-13-multilib gcc-13-doc bzr libstdc++-13-doc make-doc
+Recommended packages:
+  python3-distutils
+The following NEW packages will be installed:
+  build-essential bzip2 dpkg-dev fakeroot g++ g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libdpkg-perl libfakeroot libfile-fcntllock-perl libstdc++-13-dev lto-disabled-list
+  make python3-distlib python3-filelock python3-pip-whl python3-platformdirs python3-setuptools-whl python3-virtualenv
+  python3-wheel-whl
+0 upgraded, 24 newly installed, 0 to remove and 0 not upgraded.
+Need to get 19.3 MB of archives.
+After this operation, 65.8 MB of additional disk space will be used.
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++-13-dev amd64 13.3.0-6ubuntu2~24.04 [2420 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [12.2 MB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13 amd64 13.3.0-6ubuntu2~24.04 [16.1 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 g++-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [964 B]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 g++ amd64 4:13.2.0-7ubuntu1 [1100 B]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.1 [269 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 lto-disabled-list all 47 [12.4 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg-dev all 1.22.6ubuntu6.1 [1074 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4928 B]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libfakeroot amd64 1.33-1 [32.4 kB]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 fakeroot amd64 1.33-1 [67.2 kB]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-xs-perl amd64 0.04-8build3 [11.2 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-merge-perl all 0.08-5 [11.4 kB]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5 [30.7 kB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-distlib all 0.3.8-1 [318 kB]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-filelock all 3.13.1-1 [10.8 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip-whl all 24.0+dfsg-1ubuntu1.2 [1703 kB]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 python3-platformdirs all 4.2.0-1 [16.1 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-setuptools-whl all 68.1.2-2ubuntu1.2 [716 kB]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-wheel-whl all 0.42.0-2 [67.8 kB]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-virtualenv all 20.25.0+ds-2 [70.8 kB]
+Fetched 19.3 MB in 0s (55.4 MB/s)
+Selecting previously unselected package libstdc++-13-dev:amd64.
+(Reading database ... 76871 files and directories currently installed.)
+Preparing to unpack .../00-libstdc++-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package g++-13-x86-64-linux-gnu.
+Preparing to unpack .../01-g++-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package g++-13.
+Preparing to unpack .../02-g++-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking g++-13 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package g++-x86-64-linux-gnu.
+Preparing to unpack .../03-g++-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../04-g++_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking g++ (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../05-make_4.3-4.1build2_amd64.deb ...
+Unpacking make (4.3-4.1build2) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../06-libdpkg-perl_1.22.6ubuntu6.1_all.deb ...
+Unpacking libdpkg-perl (1.22.6ubuntu6.1) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../07-bzip2_1.0.8-5.1build0.1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5.1build0.1) ...
+Selecting previously unselected package lto-disabled-list.
+Preparing to unpack .../08-lto-disabled-list_47_all.deb ...
+Unpacking lto-disabled-list (47) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../09-dpkg-dev_1.22.6ubuntu6.1_all.deb ...
+Unpacking dpkg-dev (1.22.6ubuntu6.1) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../10-build-essential_12.10ubuntu1_amd64.deb ...
+Unpacking build-essential (12.10ubuntu1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../11-libfakeroot_1.33-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.33-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../12-fakeroot_1.33-1_amd64.deb ...
+Unpacking fakeroot (1.33-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../13-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl:amd64.
+Preparing to unpack .../14-libalgorithm-diff-xs-perl_0.04-8build3_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../15-libalgorithm-merge-perl_0.08-5_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-5) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../16-libfile-fcntllock-perl_0.22-4ubuntu5_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-4ubuntu5) ...
+Selecting previously unselected package python3-distlib.
+Preparing to unpack .../17-python3-distlib_0.3.8-1_all.deb ...
+Unpacking python3-distlib (0.3.8-1) ...
+Selecting previously unselected package python3-filelock.
+Preparing to unpack .../18-python3-filelock_3.13.1-1_all.deb ...
+Unpacking python3-filelock (3.13.1-1) ...
+Selecting previously unselected package python3-pip-whl.
+Preparing to unpack .../19-python3-pip-whl_24.0+dfsg-1ubuntu1.2_all.deb ...
+Unpacking python3-pip-whl (24.0+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package python3-platformdirs.
+Preparing to unpack .../20-python3-platformdirs_4.2.0-1_all.deb ...
+Unpacking python3-platformdirs (4.2.0-1) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../21-python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...
+Unpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+Selecting previously unselected package python3-wheel-whl.
+Preparing to unpack .../22-python3-wheel-whl_0.42.0-2_all.deb ...
+Unpacking python3-wheel-whl (0.42.0-2) ...
+Selecting previously unselected package python3-virtualenv.
+Preparing to unpack .../23-python3-virtualenv_20.25.0+ds-2_all.deb ...
+Unpacking python3-virtualenv (20.25.0+ds-2) ...
+Setting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+Setting up lto-disabled-list (47) ...
+Setting up python3-filelock (3.13.1-1) ...
+Setting up libfile-fcntllock-perl (0.22-4ubuntu5) ...
+Setting up python3-pip-whl (24.0+dfsg-1ubuntu1.2) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up python3-distlib (0.3.8-1) ...
+Setting up bzip2 (1.0.8-5.1build0.1) ...
+Setting up python3-platformdirs (4.2.0-1) ...
+Setting up libfakeroot:amd64 (1.33-1) ...
+Setting up fakeroot (1.33-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up make (4.3-4.1build2) ...
+Setting up libdpkg-perl (1.22.6ubuntu6.1) ...
+Setting up python3-wheel-whl (0.42.0-2) ...
+Setting up libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
+Setting up libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Setting up libalgorithm-merge-perl (0.08-5) ...
+Setting up g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Setting up python3-virtualenv (20.25.0+ds-2) ...
+Setting up dpkg-dev (1.22.6ubuntu6.1) ...
+Setting up g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up g++-13 (13.3.0-6ubuntu2~24.04) ...
+Setting up g++ (4:13.2.0-7ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.10ubuntu1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Scanning processes...
+Scanning candidates...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart networkd-dispatcher.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-35-115:~# python3 -m venv myenv
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.12-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /root/myenv/bin/python3
+
+root@ip-172-31-35-115:~# ls
+myenv  snap
+root@ip-172-31-35-115:~# mkdir myflask-proj
+root@ip-172-31-35-115:~# ls
+myenv  myflask-proj  snap
+root@ip-172-31-35-115:~# cd myflask-proj/
+root@ip-172-31-35-115:~/myflask-proj# python3 -m venv venv
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.12-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /root/myflask-proj/venv/bin/python3
+
+root@ip-172-31-35-115:~/myflask-proj# apt install python3.12-venv
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  python3.12-venv
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5678 B of archives.
+After this operation, 28.7 kB of additional disk space will be used.
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3.12-venv amd64 3.12.3-1ubuntu0.8 [5678 B]
+Fetched 5678 B in 0s (367 kB/s)
+Selecting previously unselected package python3.12-venv.
+(Reading database ... 78658 files and directories currently installed.)
+Preparing to unpack .../python3.12-venv_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking python3.12-venv (3.12.3-1ubuntu0.8) ...
+Setting up python3.12-venv (3.12.3-1ubuntu0.8) ...
+Scanning processes...
+Scanning candidates...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart networkd-dispatcher.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-35-115:~/myflask-proj# python3 -m venv venv
+root@ip-172-31-35-115:~/myflask-proj# source venv/bin/activate
+(venv) root@ip-172-31-35-115:~/myflask-proj# pip install Flask gunicorn
+Collecting Flask
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting gunicorn
+  Downloading gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting blinker>=1.9.0 (from Flask)
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from Flask)
+  Downloading click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting itsdangerous>=2.2.0 (from Flask)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from Flask)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from Flask)
+  Downloading MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting werkzeug>=3.1.0 (from Flask)
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting packaging (from gunicorn)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 2.5 MB/s eta 0:00:00
+Downloading gunicorn-23.0.0-py3-none-any.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.0/85.0 kB 9.5 MB/s eta 0:00:00
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.2.1-py3-none-any.whl (102 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.2/102.2 kB 12.9 MB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 19.4 MB/s eta 0:00:00
+Downloading MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 27.0 MB/s eta 0:00:00
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.5/66.5 kB 8.3 MB/s eta 0:00:00
+Installing collected packages: packaging, markupsafe, itsdangerous, click, blinker, werkzeug, jinja2, gunicorn, Flask
+Successfully installed Flask-3.1.2 blinker-1.9.0 click-8.2.1 gunicorn-23.0.0 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.2 packaging-25.0 werkzeug-3.1.3
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim app.py
+(venv) root@ip-172-31-35-115:~/myflask-proj# cat app.py
+from flask import Flask, render_template
+
+  app = Flask(__name__)
+
+  @app.route('/')
+  def home():
+      return render_template('index.html', title='Home', content='Hello, Flask!')
+
+  if __name__ == '__main__':
+      app.run(debug=True)
+(venv) root@ip-172-31-35-115:~/myflask-proj# mkdir templates
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+app.py  templates  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# cd templates/
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# ls
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# vim index.html
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /home/ec2-user/myflask-proj/templates/500.html
+touch: cannot touch '/home/ec2-user/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /home/ubuntu/myflask-proj/templates/500.html
+touch: cannot touch '/home/ubuntu/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /home/ubuntu/myflask-proj/templates/500.html
+touch: cannot touch '/home/ubuntu/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /ubuntu/home/myflask-proj/templates/500.html
+touch: cannot touch '/ubuntu/home/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /home/myflask-proj/templates/500.html
+touch: cannot touch '/home/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /ubuntu/myflask-proj/templates/500.html
+touch: cannot touch '/ubuntu/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /home/ubuntu/myflask-proj/templates/500.html
+touch: cannot touch '/home/ubuntu/myflask-proj/templates/500.html': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# nano /home/ubuntu/myflask-proj/templates/500.html
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# sudo chmod -R +r /home/ubuntu/myflask-proj
+chmod: cannot access '/home/ubuntu/myflask-proj': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# sudo chmod -R +r /home/ubuntu/myflask-proj
+chmod: cannot access '/home/ubuntu/myflask-proj': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# sudo chmod -R 755 /home/ubuntu/myflask-proj
+chmod: cannot access '/home/ubuntu/myflask-proj': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# pwd
+/root/myflask-proj/templates
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# touch /root/myflask-proj/templates/500.html
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# sudo chmod -R +r /root/myflask-proj
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# cd ..
+(venv) root@ip-172-31-35-115:~/myflask-proj# gunicorn -w 1 -b 0.0.0.0:5000 app:app
+[2025-08-25 05:07:36 +0000] [26735] [INFO] Starting gunicorn 23.0.0
+[2025-08-25 05:07:36 +0000] [26735] [INFO] Listening at: http://0.0.0.0:5000 (26735)
+[2025-08-25 05:07:36 +0000] [26735] [INFO] Using worker: sync
+[2025-08-25 05:07:36 +0000] [26742] [INFO] Booting worker with pid: 26742
+[2025-08-25 05:07:36 +0000] [26742] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ^^^^^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+                    ^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/myflask-proj/app.py", line 1
+    from flask import Flask, render_template
+    ^
+SyntaxError: invalid non-printable character U+001B
+[2025-08-25 05:07:36 +0000] [26742] [INFO] Worker exiting (pid: 26742)
+[2025-08-25 05:07:36 +0000] [26735] [ERROR] Worker (pid:26742) exited with code 3
+[2025-08-25 05:07:36 +0000] [26735] [ERROR] Shutting down: Master
+[2025-08-25 05:07:36 +0000] [26735] [ERROR] Reason: Worker failed to boot.
+(venv) root@ip-172-31-35-115:~/myflask-proj# pip install gunicorn
+Requirement already satisfied: gunicorn in ./venv/lib/python3.12/site-packages (23.0.0)
+Requirement already satisfied: packaging in ./venv/lib/python3.12/site-packages (from gunicorn) (25.0)
+(venv) root@ip-172-31-35-115:~/myflask-proj# gunicorn -w 1 -b 0.0.0.0:5000 app:app
+[2025-08-25 05:11:06 +0000] [28014] [INFO] Starting gunicorn 23.0.0
+[2025-08-25 05:11:06 +0000] [28014] [INFO] Listening at: http://0.0.0.0:5000 (28014)
+[2025-08-25 05:11:06 +0000] [28014] [INFO] Using worker: sync
+[2025-08-25 05:11:06 +0000] [28015] [INFO] Booting worker with pid: 28015
+[2025-08-25 05:11:06 +0000] [28015] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ^^^^^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+                    ^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/myflask-proj/venv/lib/python3.12/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/myflask-proj/app.py", line 1
+    from flask import Flask, render_template
+    ^
+SyntaxError: invalid non-printable character U+001B
+[2025-08-25 05:11:06 +0000] [28015] [INFO] Worker exiting (pid: 28015)
+[2025-08-25 05:11:06 +0000] [28014] [ERROR] Worker (pid:28015) exited with code 3
+[2025-08-25 05:11:06 +0000] [28014] [ERROR] Shutting down: Master
+[2025-08-25 05:11:06 +0000] [28014] [ERROR] Reason: Worker failed to boot.
+(venv) root@ip-172-31-35-115:~/myflask-proj# cat myflask-proj
+cat: myflask-proj: No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj# myflask-proj/
+├── app.py   (contains Flask app = app)
+├── templates/
+└── venv/
+bash: myflask-proj/: No such file or directory
+bash: syntax error near unexpected token `('
+├──: command not found
+└──: command not found
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+app.py  templates  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# cat app.py
+from flask import Flask, render_template
+
+  app = Flask(__name__)
+
+  @app.route('/')
+  def home():
+      return render_template('index.html', title='Home', content='Hello, Flask!')
+
+  if __name__ == '__main__':
+      app.run(debug=True)
+(venv) root@ip-172-31-35-115:~/myflask-proj#
+
+
+
+
+
+
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Aug 25 09:30:16 UTC 2025
+
+  System load:  0.0               Processes:             115
+  Usage of /:   34.2% of 6.71GB   Users logged in:       0
+  Memory usage: 28%               IPv4 address for enX0: 172.31.35.115
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Last login: Mon Aug 25 06:28:17 2025 from 14.96.138.146
+ubuntu@ip-172-31-35-115:~$ sudo su
+root@ip-172-31-35-115:/home/ubuntu# cd
+root@ip-172-31-35-115:~# ls
+myenv  myflask-proj  snap
+root@ip-172-31-35-115:~# cd myflask-proj
+root@ip-172-31-35-115:~/myflask-proj# ls
+__pycache__  app.py  templates  venv
+root@ip-172-31-35-115:~/myflask-proj# source venv/bin/activate
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/conf.d/flask-app.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/nginx.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo chmod -R +r /root/myflask-proj
+(venv) root@ip-172-31-35-115:~/myflask-proj# nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+[1] 84079
+(venv) root@ip-172-31-35-115:~/myflask-proj#
+Authenticating with public key "Imported-Openssh-Key"
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v25.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ubuntu@13.234.78.128                                │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✓  (remote display is forwarded through SSH)  │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Aug 25 09:30:16 UTC 2025
+
+  System load:  0.0               Processes:             115
+  Usage of /:   34.2% of 6.71GB   Users logged in:       0
+  Memory usage: 28%               IPv4 address for enX0: 172.31.35.115
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Last login: Mon Aug 25 06:28:17 2025 from 14.96.138.146
+ubuntu@ip-172-31-35-115:~$ sudo su
+root@ip-172-31-35-115:/home/ubuntu# cd
+root@ip-172-31-35-115:~# ls
+myenv  myflask-proj  snap
+root@ip-172-31-35-115:~# cd myflask-proj
+root@ip-172-31-35-115:~/myflask-proj# ls
+__pycache__  app.py  templates  venv
+root@ip-172-31-35-115:~/myflask-proj# source venv/bin/activate
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/conf.d/flask-app.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/nginx.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo chmod -R +r /root/myflask-proj
+(venv) root@ip-172-31-35-115:~/myflask-proj# nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+[1] 84079
+(venv) root@ip-172-31-35-115:~/myflask-proj# pkill gunicorn
+(venv) root@ip-172-31-35-115:~/myflask-proj# service nginx stop
+[1]+  Done                    nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1
+(venv) root@ip-172-31-35-115:~/myflask-proj#
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+__pycache__  app.py  gunicorn.log  templates  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# rm app.py
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+__pycache__  gunicorn.log  templates  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# rm -rf templates/
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+__pycache__  gunicorn.log  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# yum install git -y
+Command 'yum' not found, did you mean:
+  command 'num' from deb quickcal (2.4-1)
+  command 'uum' from deb freewnn-jserver (1.1.1~a021+cvs20130302-7build1)
+  command 'zum' from deb perforate (1.2-5.3)
+  command 'sum' from deb coreutils (9.4-2ubuntu2)
+Try: apt install <deb name>
+(venv) root@ip-172-31-35-115:~/myflask-proj# apt install git -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+(venv) root@ip-172-31-35-115:~/myflask-proj# git clone https://github.com/avizway1/flask-installation.git
+Cloning into 'flask-installation'...
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 44 (delta 13), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (44/44), 12.88 KiB | 627.00 KiB/s, done.
+Resolving deltas: 100% (13/13), done.
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+__pycache__  flask-installation  gunicorn.log  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# cp -r flask-installation/* .
+(venv) root@ip-172-31-35-115:~/myflask-proj# ls
+README.md  __pycache__  app.py  flask-installation  gunicorn.log  templates  venv
+(venv) root@ip-172-31-35-115:~/myflask-proj# cd templates/
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# ls
+error.html  index.html  new_post.html  not_found.html  post.html
+(venv) root@ip-172-31-35-115:~/myflask-proj/templates# cd ..
+(venv) root@ip-172-31-35-115:~/myflask-proj# service nginx start
+(venv) root@ip-172-31-35-115:~/myflask-proj# nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+[1] 94617
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+[2] 96612
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/nginx.conf
+[2]+  Exit 1                  nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/conf.d/flask-app.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/conf.d/flask-app.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/conf.d/flask-app.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/nginx.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/nginx.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+(venv) root@ip-172-31-35-115:~/myflask-proj# vim /etc/nginx/nginx.conf
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl enable nginx
+Synchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo chmod -R +r /home/ec2-user/myflask-proj
+chmod: cannot access '/home/ec2-user/myflask-proj': No such file or directory
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo chmod -R +r /root/myflask-proj
+(venv) root@ip-172-31-35-115:~/myflask-proj# nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+[2] 109638
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl restart nginx
+[2]+  Exit 1                  nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+(venv) root@ip-172-31-35-115:~/myflask-proj# nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+Command 'nginx:' not found, did you mean:
+  command 'nginx' from deb nginx (1.24.0-2ubuntu7.1)
+Try: apt install <deb name>
+Command 'nginx:' not found, did you mean:
+  command 'nginx' from deb nginx (1.24.0-2ubuntu7.1)
+Try: apt install <deb name>
+(venv) root@ip-172-31-35-115:~/myflask-proj# sudo systemctl reload nginx
+(venv) root@ip-172-31-35-115:~/myflask-proj# ^C
+(venv) root@ip-172-31-35-115:~/myflask-proj#
+    1  sudo yum install python3 -y
+    2  cd
+    3  sudo yum install python3 -y
+    4  sudo yum install gcc python3-devel -y
+    5  cd
+    6  sudo yum install python3 -y
+    7  yum install python3 -y
+    8  sudo yum install python3 -y
+    9  sudo yum install gcc python3-devel -y
+   10  sudo pro status
+   11  sudo yum install python3 -y
+   12  sudo apt update
+   13  sudo apt install python3 -y
+   14  sudo apt install gcc python3-devel -y
+   15  sudo apt install gcc python3-dev -y
+   16  sudo pip3 install virtualenv
+   17  pip3 install --user virtualenv
+   18  sudo apt install python3-virtualenv -y
+   19  python3 -m venv myenv
+   20  ls
+   21  mkdir myflask-proj
+   22  ls
+   23  cd myflask-proj/
+   24  python3 -m venv venv
+   25  apt install python3.12-venv
+   26  python3 -m venv venv
+   27  source venv/bin/activate
+   28  pip install Flask gunicorn
+   29  vim app.py
+   30  cat app.py
+   31  mkdir templates
+   32  ls
+   33  cd templates/
+   34  ls
+   35  vim index.html
+   36  touch /home/ec2-user/myflask-proj/templates/500.html
+   37  touch /home/ubuntu/myflask-proj/templates/500.html
+   38  touch /ubuntu/home/myflask-proj/templates/500.html
+   39  touch /home/myflask-proj/templates/500.html
+   40  touch /ubuntu/myflask-proj/templates/500.html
+   41  touch /home/ubuntu/myflask-proj/templates/500.html
+   42  nano /home/ubuntu/myflask-proj/templates/500.html
+   43  sudo chmod -R +r /home/ubuntu/myflask-proj
+   44  sudo chmod -R 755 /home/ubuntu/myflask-proj
+   45  pwd
+   46  touch /root/myflask-proj/templates/500.html
+   47  sudo chmod -R +r /root/myflask-proj
+   48  cd ..
+   49  gunicorn -w 1 -b 0.0.0.0:5000 app:app
+   50  pip install gunicorn
+   51  gunicorn -w 1 -b 0.0.0.0:5000 app:app
+   52  cat myflask-proj
+   53  myflask-proj/
+   54  ├── app.py   (contains Flask app = app)
+   55  ├── templates/
+   56  └── venv/
+   57  ls
+   58  cat app.py
+   59  ls
+   60  cd
+   61  ls
+   62  cd myflask-proj
+   63  source venv/bin/activate
+   64  gunicorn -w 1 -b 0.0.0.0:5000 app:app
+   65  gunicorn -w 1 -b 0.0.0.0:5000 app:application
+   66  gunicorn -w 1 -b 0.0.0.0:5000 main:app
+   67  python3 app.py
+   68  source venv/bin/activate
+   69  gunicorn -w 1 -b 0.0.0.0:5000 app:app
+   70  gunicorn -w 1 -b 0.0.0.0:5000 app:app --log-level debug
+   71  ls
+   72  cat app.py
+   73  vim app.py
+   74  gunicorn -w 1 -b 0.0.0.0:5000 app:app
+   75  cd
+   76  ls
+   77  cd myflask-proj
+   78  ls
+   79  source venv/bin/activate
+   80  cat app.py
+   81  gunicorn -w 1 -b 0.0.0.0:5000 app.py:app.py
+   82  history
+   83  pip install flask
+   84  ls
+   85  vim app.py
+   86  python3 app.py
+   87  pip install gunicorn
+   88  gunicorn -w 2 -b 0.0.0.0:5000 app:app
+   89  sudo apt update
+   90  sudo apt install nginx -y
+   91  pwd
+   92  ls
+   93  vim /etc/nginx/conf.d/flask-app.conf
+   94  cd
+   95  ls
+   96  cd myflask-proj
+   97  ls
+   98  source venv/bin/activate
+   99  vim /etc/nginx/conf.d/flask-app.conf
+  100  vim /etc/nginx/nginx.conf
+  101  sudo nginx -t
+  102  sudo systemctl restart nginx
+  103  sudo chmod -R +r /root/myflask-proj
+  104  nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+  105  pkill gunicorn
+  106  service nginx stop
+  107  ls
+  108  rm app.py
+  109  ls
+  110  rm -rf templates/
+  111  ls
+  112  yum install git -y
+  113  apt install git -y
+  114  git clone https://github.com/avizway1/flask-installation.git
+  115  ls
+  116  cp -r flask-installation/* .
+  117  ls
+  118  cd templates/
+  119  ls
+  120  cd ..
+  121  service nginx start
+  122  nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+  123  sudo systemctl restart nginx
+  124  sudo nginx -t
+  125  nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+  126  vim /etc/nginx/nginx.conf
+  127  vim /etc/nginx/conf.d/flask-app.conf
+  128  sudo systemctl restart nginx
+  129  sudo nginx -t
+  130  vim /etc/nginx/conf.d/flask-app.conf
+  131  sudo systemctl restart nginx
+  132  sudo nginx -t
+  133  vim /etc/nginx/conf.d/flask-app.conf
+  134  vim /etc/nginx/nginx.conf
+  135  sudo systemctl restart nginx
+  136  sudo nginx -t
+  137  vim /etc/nginx/nginx.conf
+  138  sudo systemctl restart nginx
+  139  vim /etc/nginx/nginx.conf
+  140  sudo systemctl restart nginx
+  141  sudo nginx -t
+  142  sudo systemctl enable nginx
+  143  sudo chmod -R +r /home/ec2-user/myflask-proj
+  144  sudo chmod -R +r /root/myflask-proj
+  145  nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+  146  sudo systemctl restart nginx
+  147  sudo nginx -t
+  148  nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+  149  nginx: configuration file /etc/nginx/nginx.conf test is successful
+  150  sudo systemctl reload nginx
+  151  history
+(venv) root@ip-172-31-35-115:~/myflask-proj#
